@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SimpleApp</string>
+    <string name="btn_hide_and_show_title_bottom">快速实现滑动隐藏标题栏和导航栏</string>
 </resources>

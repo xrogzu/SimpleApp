@@ -7,8 +7,7 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
 
-import com.orhanobut.logger.LogLevel;
-import com.orhanobut.logger.Logger;
+import com.example.hfs.simpleapp.utils.LogUtil;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -107,11 +106,6 @@ public class App extends Application {
      */
 
     private void initLogger() {
-        Logger.init()                 // 设置Log的TAG值，默认值为 PRETTYLOGGER，也可自定义
-                .methodCount(3)                 // 设置Log中调用堆栈的函数行数，默认值为 2，即显示2层
-                .hideThreadInfo()               // 隐藏Log中的线程信息，默认值为 shown，即显示线程信息
-                .logLevel(LogLevel.FULL)        // 设置Log的是否输出，默认值为 LogLevel.FULL，即Log全输出，LogLevel.NONE即无Log输出
-                .methodOffset(0);             // 设置调用堆栈的函数偏移值，默认值为 0，即从打印该Log的函数开始输出堆栈信息
-//                .logAdapter(new AndroidLogAdapter()); //设置Log工具，默认值为 AndroidLogAdapter，即 android.util.log
+        LogUtil.init();
     }
 }
