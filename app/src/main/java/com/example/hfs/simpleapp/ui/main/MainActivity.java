@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 
 import com.example.hfs.simpleapp.R;
 import com.example.hfs.simpleapp.ui.byeburger.ByeBurgerActivity;
-import com.example.hfs.simpleapp.utils.JumpUtil;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
