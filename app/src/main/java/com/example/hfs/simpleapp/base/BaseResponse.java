@@ -6,17 +6,12 @@ package com.example.hfs.simpleapp.base;
  */
 
 public class BaseResponse<T> {
-    private int code;
-    private String message;
-    private T data;
+    public static final int FAILURE = 0; // 失败
+    public static final int SUCCESS = 1; // 成功
 
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
+    private int status;  // 返回状态：0 失败   1 成功
+    private String message;  // 返回信息
+    private T data;  // 包装的对象
 
     public String getMessage() {
         return message;
@@ -26,11 +21,19 @@ public class BaseResponse<T> {
         this.message = message;
     }
 
-    public int getCode() {
-        return code;
+    public int getStatus() {
+        return status;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
     }
 }
