@@ -16,6 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.byeburger.ByeBurgerActivity"/>
+        <activity android:name=".ui.countdown.CountDownActivity">
+        </activity>
     </application>
 
 </manifest>
