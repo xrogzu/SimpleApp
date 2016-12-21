@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import com.example.hfs.simpleapp.R;
 import com.example.hfs.simpleapp.ui.byeburger.ByeBurgerActivity;
 import com.example.hfs.simpleapp.ui.countdown.CountDownActivity;
+import com.example.hfs.simpleapp.ui.launcher.LauncherActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_hide_and_show_title_bottom, R.id.btn_ad_count_down})
+    @OnClick({R.id.btn_hide_and_show_title_bottom, R.id.btn_ad_count_down, R.id.btn_launcher})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_hide_and_show_title_bottom:
@@ -37,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_ad_count_down:
                 jump(CountDownActivity.class);
+                break;
+            case R.id.btn_launcher:
+                jump(LauncherActivity.class);
                 break;
         }
     }

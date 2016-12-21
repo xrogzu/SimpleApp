@@ -18,6 +18,8 @@
         <activity android:name=".ui.byeburger.ByeBurgerActivity"/>
         <activity android:name=".ui.countdown.CountDownActivity">
         </activity>
+        <activity android:name=".ui.launcher.LauncherActivity">
+        </activity>
     </application>
 
 </manifest>

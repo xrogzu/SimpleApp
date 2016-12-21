@@ -24,6 +24,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ad_count_down"/>
+
+        <Button
+            android:id="@+id/btn_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/launcher_animation"/>
     </LinearLayout>
 </ScrollView>
 
